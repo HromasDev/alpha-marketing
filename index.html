@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+
+</head>
+
+<body class="pagecrm_">
+    <div class="header">
+        <div class="header__top">
+            <a href="" class="header__logo">
+                <img class="header__logo-image" src="imgs/logo.svg" alt="" srcset="">
+            </a>
+            <div class="header__menu">
+                <a href="">УСЛУГИ</a>
+                <a href="">КЕЙСЫ</a>
+                <a href="">ЕЩЕ</a>
+                <img class="header-icon" src="imgs/icons/search.svg" alt="" srcset="">
+            </div>
+            <div class="header__contact">
+                <div class="header__phone">
+                    <img class="header-icon" src="imgs/icons/contact.svg" alt="" srcset="">
+                    <span class="header__phone-span">8 812 409-5222</span>
+                </div>
+                <button class="header__button btn3">
+                    ЗАДАТЬ ВОПРОС<img class="header__button-img" src="imgs/icons/arrow2.svg" alt="" srcset="">
+                </button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__burger">
+                <img class="header__burger-icon" src="imgs/icons/burger.svg" alt="" srcset="">
+            </div>
+            <form class="header__search" action="" method="get">
+                <label for="query">
+                    <img src="imgs/icons/search.svg" alt="" srcset="">
+                </label>
+                <input type="text" name="query" id="query">
+            </form>
+        </div>
+    </div>
+    <div class="breadcrumbs">
+        <a href="">Главная</a>
+        <img src="imgs/icons/arrow.svg" alt="" srcset="">
+        <a href="">Услуги Альфа маркетинг</a>
+        <img src="imgs/icons/arrow.svg" alt="" srcset="">
+        <a href="" class="lite-glow">CRM</a>
+    </div>
+
+    <div id="popup">
+        <div class="popup__form">
+            <h1 class="popup-header center">Форма для заполнения</h1>
+            <span class="popup-span center">Оставьте свои контактные данные, и мы свяжемся с Вами в течение 20
+                минут</span>
+
+            <form id="popup-form" action="" method="post">
+                <input type="text" class="popup__form-input tel" placeholder="Ваш телефон" required
+                    pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}">
+                <input type="email" class="popup__form-input" placeholder="Почта*" required>
+                <div class="center">
+                    <button class="popup__form-button btn3" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                </div>
+                <input class="popup__form-checkbox" type="checkbox" id="policy" name="policy" required />
+                <label class="popup__form-label" for="policy"><span class="popup__form-span">Нажимая на кнопку, я
+                        соглашаюсь с условиями <u><a class="popup__form-link" href="">Политики
+                                конфиденциальности</a></u></span></label>
+            </form>
+        </div>
+        <div class="popup__success">
+            <img src="imgs/check.svg" alt="" srcset="">
+            <span class="popup__success-span center">Ваша заявка успешно отправлена!</span>
+        </div>
+    </div>
+    <div id="mask"></div>
+
+
+
+    <div class="content">
+        <div class="quiz">
+            <img class="quiz__icon" src="imgs/icons/about.svg" alt="" srcset="">
+            <hr class="quiz__line">
+            <img class="quiz__icon" src="imgs/icons/contact.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <img class="capa" src="imgs/capa.svg" alt="" srcset="">
+        </div>
+        <section>
+            <h2 class="center lite-glow">CRM</h2>
+            <div class="center">
+                <img class="xl-img" src="imgs/crm.svg" alt="">
+            </div>
+            <div class="center">
+                <button class="btn1 open_popup">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+        </section>
+        <section>
+            <h1 class="center">Управление<br>бизнес-процессами</h1>
+            <div class="grid_two">
+                <div>
+                    <div class="center">
+                        <img class="m-img" src="imgs/process1.svg" alt="" srcset="">
+                    </div>
+                    <h4 class="center">Удобное общение<br>с заказчиками</h4>
+                </div>
+                <div>
+                    <div class="center">
+                        <img class="m-img" src="imgs/process2.svg" alt="" srcset="">
+                    </div>
+                    <h4 class="center">Лучшие<br>CRM-системы</h4>
+                </div>
+                <div>
+                    <div class="center">
+                        <img class="m-img" src="imgs/process3.svg" alt="" srcset="">
+                    </div>
+                    <h4 class="center">Повышение<br>эффективности<br>отдела продаж</h4>
+                </div>
+                <div>
+                    <div class="center">
+                        <img class="m-img" src="imgs/process4.svg" alt="" srcset="">
+                    </div>
+                    <h4 class="center">Карточка с историей<br>событий для каждого<br>заказчика</h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid">
+                <div class="partner">
+                    <div class="partner__illustration">
+                        <div class="center">
+                            <img class="partner__illustration-logo m-img" src="imgs/partner1-logo.svg" alt="" srcset="">
+                        </div>
+                        <div class="center">
+                            <img class="partner__illustration-img m-img" src="imgs/partner1.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="partner__description">
+                        <h3 class="contrast_text">Функции:</h3>
+                        <ul>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>CRM</span>
+                            </li>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>Интеграция с<br>другими<br>сервисами</span>
+                            </li>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>Онлайн-бот</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="partner">
+                    <div class="partner__illustration">
+                        <div class="center">
+                            <img class="partner__illustration-logo m-img" src="imgs/partner2-logo.svg" alt="" srcset="">
+                        </div>
+                        <div class="center">
+                            <img class="partner__illustration-img m-img" src="imgs/partner2.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="partner__description">
+                        <h3 class="contrast_text">Функции:</h3>
+                        <ul>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>CRM</span>
+                            </li>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>Корпоративный портал</span>
+                            </li>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>Онлайн офис</span>
+                            </li>
+                            <li>
+                                <div class="partner__description__check">
+                                    <img class="partner__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span>Интеграция с другими сервисами и т.д.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bid">
+                <h1 class="bid__header center">Оставить заявку</h1>
+                <span class="center">Выберите систему для вашего бизнеса,<br>и мы свяжемся с Вами в течение 20
+                    минут</span>
+
+                <form class="bid__form" action="" method="post">
+                    <input class="bid__form-input" type="text" placeholder="ФИО" required>
+                    <input class="bid__form-input tel" type="text" placeholder="Телефон" required
+                        pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}">
+                    <div class="sel sel--black-panther">
+                        <select class="bid__form-select" name="select-profession" id="select-profession">
+                            <option value="" disabled>Выберите систему</option>
+                            <option value="amoCRM">amoCRM</option>
+                            <option value="Битрикс24">Битрикс24</option>
+                            <option value="Нужна помощь в выборе">Нужна помощь в выборе</option>
+                        </select>
+                        <img src="imgs/icons/arrow.svg" alt="" srcset="">
+                    </div>
+                    <textarea class="bid__form-textarea" name="comment" id=""
+                        placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"></textarea>
+                    <button class="bid__form-button btn3" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2 class="center">Кому полезна CRM</h2>
+            <div class="wrapper">
+                <div class="about_crm">
+                    <ul class="about_crm__ul">
+                        <li>
+                            <div class="about_crm__check">
+                                <img class="s-img" src="imgs/checkbox.svg" alt="" srcset="">
+                            </div>
+                            <span class="about_crm-span">Любому бизнесу, работающему с клиентской базой</span>
+                        </li>
+                        <li>
+                            <div class="about_crm__check">
+                                <img class="s-img" src="imgs/checkbox.svg" alt="" srcset="">
+                            </div>
+                            <span class="about_crm-span">На компьютер, подключите гарнитуру и звоните прямо из CRM одним
+                                кликом</span>
+                        </li>
+                        <li>
+                            <div class="about_crm__check">
+                                <img class="s-img" src="imgs/checkbox.svg" alt="" srcset="">
+                            </div>
+                            <span class="about_crm-span">На компьютер, подключите гарнитуру и звоните прямо из CRM одним
+                                кликом</span>
+                        </li>
+                    </ul>
+                </div>
+                <img class="wrapper-img l-img" src="imgs/phone.webp" alt="" srcset="">
+            </div>
+        </section>
+        <section>
+            <h2 class="center">CRM В БИЗНЕСЕ</h2>
+            <span class="center subtitle contrast_text">Наши кейсы</span>
+            <div class="cases">
+                <div class="grid">
+                    <div class="cases__case">
+                        <div class="col">
+                            <div class="case__art">
+                                <img class="case__art-img m-img" src="imgs/case1.svg" alt="" srcset="">
+                                <h3 class="contrast_text center">г. Санкт-Петербург</h3>
+                            </div>
+                        </div>
+                        <div class="col w-100">
+                            <div class="case__description">
+                                <h3>“Пестовский Лесокомбинат”</h3>
+                                <span>Строительная компания</span>
+                                <h3 class="contrast_text">Работают на платформе amoCRM</h3>
+                            </div>
+                            <div class="case__btn_wrapper">
+                                <button class="case__btn_wrapper-button btn2">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__case">
+                        <div class="col">
+                            <div class="case__art">
+                                <img class="case__art-img m-img" src="imgs/case2.svg" alt="" srcset="">
+                                <h3 class="contrast_text center">Россия</h3>
+                            </div>
+                        </div>
+                        <div class="col w-100">
+                            <div class="case__description">
+                                <h3>Магазин “Mongol Store”</h3>
+                                <span>Одежда из натуральной шерсти</span>
+                                <h3 class="contrast_text">Используют БитриксCRM</h3>
+                            </div>
+                            <div class="case__btn_wrapper">
+                                <button class="case__btn_wrapper-button btn2">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="center">Стоимость подключения</h2>
+            <div class="grid">
+                <div class="price_block">
+                    <div class="price_block__row">
+                        <span>Подключение системы CRM</span>
+                        <h3 class="contrast_text">от 10 000 ₽</h3>
+                    </div>
+                    <div class="price_block__description">
+                        <ul>
+                            <li>
+                                <div class="price_block__description__check">
+                                    <img class="price_block__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span class="price_block__description-span">Покупка любого тарифа со скидкой</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <button class="price_block__button btn3 open_popup">ЗАКАЗАТЬ<img class="price_block__button-img"
+                                src="imgs/icons/arrow2.svg" alt="" srcset=""></button>
+                    </div>
+                </div>
+                <div class="price_block">
+                    <div class="price_block__row">
+                        <span>Подключение системы CRM +<br>настройка</span>
+                        <h3 class="contrast_text">от 15 000 ₽</h3>
+                    </div>
+                    <div class="price_block__description">
+                        <ul>
+                            <li>
+                                <div class="price_block__description__check">
+                                    <img class="price_block__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span class="price_block__description-span">Покупка любого тарифа со скидкой</span>
+                            </li>
+                            <li>
+                                <div class="price_block__description__check">
+                                    <img class="price_block__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span class="price_block__description-span">Индивидуальная настройка системы</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <button class="price_block__button btn3 open_popup">ЗАКАЗАТЬ<img class="price_block__button-img"
+                                src="imgs/icons/arrow2.svg" alt="" srcset=""></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center">
+                <div class="price_block">
+                    <div class="price_block__row">
+                        <span>Продление лицензий<br>amoCRM и Битрикс24</span>
+                        <h3 class="contrast_text">от 10 000 ₽</h3>
+                    </div>
+                    <div class="price_block__description">
+                        <ul>
+                            <li>
+                                <div class="price_block__description__check">
+                                    <img class="price_block__description__check-img" src="imgs/icons/check.svg" alt=""
+                                        srcset="">
+                                </div>
+                                <span class="price_block__description-span">Возможность продления лицензий со скидкой от
+                                    официальных цен</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <button class="price_block__button btn3 open_popup">ЗАКАЗАТЬ<img class="price_block__button-img"
+                                src="imgs/icons/arrow2.svg" alt="" srcset=""></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <h1 class="center">Заявка на подбор и <br>подключение CRM-системы </h1>
+            <span class="center">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость
+            </span>
+            <div class="bid connect">
+                <div class="col connect__form">
+                    <h1 class="bid__header center contrast_text">Заполните форму</h1>
+                    <span class="center">Оставьте свои контактные данные, мы свяжемся с Вами в течение 20 минут</span>
+
+                    <form class="bid__form" action="" method="post">
+                        <input class="bid__form-input" type="text" placeholder="ФИО" required>
+                        <input class="bid__form-input tel" type="text" placeholder="Телефон" required
+                            pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}">
+                        <div class="sel sel--black-panther">
+                            <select class="bid__form-select" name="select-profession" id="select-profession">
+                                <option value="" disabled>Выберите услугу</option>
+                                <option value="amoCRM">amoCRM</option>
+                                <option value="Битрикс24">Битрикс24</option>
+                                <option value="Нужна помощь в выборе">Нужна помощь в выборе</option>
+                            </select>
+                            <img src="imgs/icons/arrow3.svg" alt="" srcset="" style="rotate: 0deg;">
+                        </div>
+                        <button class="bid__form-button btn3" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                </div>
+                <div class="col connect__planet">
+                    <img class="connect-img" src="imgs/planet.svg" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="partners">
+                <h2 class="center">НАШ ПАРТНЁР<br>ПО CRM-СИСТЕМАМ</h2>
+                <div class="partners__row">
+                    <div class="col w-100">
+                        <img class="partners-img l-img" src="imgs/partners.svg" alt="" srcset="">
+                    </div>
+                    <div class="col w-100">
+                        <hr>
+                        <a href="" class="partners__link row">
+                            <span class="partners__link-span">Битрикс24 (Управление бизнесом)</span>
+                            <img class="partners__link-img" src="imgs/icons/arrow-right.svg" alt="" srcset="">
+                        </a>
+                        <hr>
+                        <a href="" class="partners__link row">
+                            <span class="partners__link-span">amoCRM (Управление бизнесом)</span>
+                            <img class="partners__link-img" src="imgs/icons/arrow-right.svg" alt="" srcset="">
+                        </a>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="contact">
+                <div class="contact__row">
+                    <div class="col w-100">
+                        <h1 class="contact-header">Напишите нам!</h1>
+                        <span class="contact-span">Заполните заявку и Мы свяжемся с Вами в течение 15 минут</span>
+                        <h1 class="contact-header">Команда Alpha marketing</h1>
+
+                    </div>
+                    <div class="col w-100">
+                        <div class="contact__form">
+                            <form action="" method="post">
+                                <input type="text" name="name" placeholder="Имя*" required>
+                                <input type="email" name="email" placeholder="@Почта*" required>
+                                <input type="text" class="tel" placeholder="+7 (___) ___ - __ - __" required
+                                    pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s-\s[0-9]{2}\s-\s[0-9]{2}">
+                                <textarea name="comment" id="" placeholder="Задать вопрос" required></textarea>
+                                <button class="btn2" type="submit">ЗАДАТЬ ВОПРОС</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <img class="rect" src="imgs/rect.webp" alt="" srcset="">
+            </div>
+        </section>
+        <div class="footer">
+            <div class="footer__row">
+                <div class="footer__menu">
+                    <h1>Меню</h1>
+                    <a class="footer__menu__link" href="">
+                        Услуги
+                    </a>
+                    <a class="footer__menu__link" href="">
+                        Кейсы
+                    </a>
+                    <a class="footer__menu__link" href="">
+                        Ещё
+                    </a>
+                    <a class="footer__menu__link" href="">
+                        <div class="footer__menu__logo">
+                            <img class="footer__menu__logo-img" src="imgs/logo.svg" alt="" width="100%">
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__contacts">
+                    <h1>Контакты</h1>
+                    <span class="footer__span">
+                        Санкт-Петербург<br>
+                        Заозёрная 8, к.2, офис 202<br>
+                        Пн-Пт, 10:00 - 18:00<br>
+                        8 (812) 409-52-22<br>
+                        <u>info@alpham.pro</u>
+                    </span>
+                    <div class="footer__contacts__social row">
+                        <a href="">
+                            <img class="footer__social-img" src="imgs/icons/vk.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="footer__social-img" src="imgs/icons/telegram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <img class="footer__map l-img" src="imgs/map.webp" alt="" srcset="" width="100%">
+            </div>
+
+            <div class="footer__logo">
+                <img class="footer__logo-img l-img" src="imgs/logo.svg" alt="">
+            </div>
+
+            <div class="footer__social row">
+                <a href="">
+                    <img class="footer__social-img" src="imgs/icons/vk.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="footer__social-img" src="imgs/icons/telegram.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__policy">
+                <span class="center">© 2024 Альфа маркетинг</span>
+                <span class="center">Политика конфиденциальности</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
